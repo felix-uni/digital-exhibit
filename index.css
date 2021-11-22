@@ -1,0 +1,10 @@
+body {
+    background-image: url('./bg/index.jpg') !important;
+    background-position: center !important;
+    background-size: cover !important;
+    min-height: 100vh !important;
+}
+.card {
+    background-color: rgba(225, 225, 225, 0.75) !important;
+}
+

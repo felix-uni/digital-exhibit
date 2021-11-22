@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap');
+
+:root {
+    --fg: #1c1c1c;
+    --bg: #eeeeee;
+    --fgdim: #dddddd;
+    --br: 1em;
+
+    --nav: Archivo Narrow;
+    --sans: Roboto Slab;
+}
+
+html {
+	font-size: 100%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans), sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    padding: 1em;
+    margin: auto;
+    max-width: 60em;
+    /* background-image: url('https://images.unsplash.com/photo-1571840933517-88a527cd7008?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80'); */
+    /* background-position: center; */
+}
+
+a {
+    color: var(--fg);
+    text-decoration: none;
+}
+
+p {
+    margin: 2em 0;
+    line-height: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	line-height: 1em;
+    font-family: var(--nav);
+}
+
+h4, h5, h6 { font-weight: bold; }
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1em; }
+h4 { font-size: 0.9em; }
+h5 { font-size: 0.9em; }
+h6 { font-size: 0.9em; }
+
+h2 { text-align: center; margin-top: 2em;}
+
+ul, ol {
+	margin: 1em 0;
+	padding: 0 0 0 2em;
+}
+
+li p:last-child { margin: 0; }
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+    display: block;
+    margin: 0 auto;
+    max-width: 25em;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td {
+	vertical-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav ul li {
+	/* This allow us to arrange list items in a row, without using float */
+	display: inline-block;
+	list-style-type: none;
+}
+
+/* Create a style for the first level items */
+nav > div > ul > li > a {
+	color: var(--fg);
+	display: block;
+	line-height: 2em;
+	padding: 0.5em 0.5em;
+	text-decoration: none;
+    font-family: var(--nav);
+}
+
+nav > div > ul > li > a:hover {
+	color: var(--fg);
+}
+
+.nav-left {
+	float: left;
+}
+
+.nav-left ul li {
+	float: left;
+}
+
+.nav-right ul li {
+	float: right;
+}
+
+nav {
+    background-color: var(--fgdim);
+    padding: 0.2em 0.9em;
+    border-radius: var(--br);
+}
+
+/* Glassmorphism card effect */
+.card {
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: var(--br);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    padding: 0.5em 2.5em;
+    margin-top: 2em;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
